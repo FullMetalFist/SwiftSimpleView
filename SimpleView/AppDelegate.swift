@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var viewController = ViewController(nibName: nil, bundle: nil)
         var navController = UINavigationController(rootViewController: viewController)
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.backgroundColor = UIColor.whiteColor()
+        window?.backgroundColor = UIColor.lightGrayColor()
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
