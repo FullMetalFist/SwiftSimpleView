@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreGraphics
 
 class ViewController: UIViewController {
     
@@ -16,10 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        slider = UISlider(frame: CGRect(x: 0, y: 80, width: 200, height: 23))
+        let spinNumber: CGFloat = CGFloat(M_PI) * 0.5
+        let transform: CGAffineTransform = CGAffineTransformMakeRotation(spinNumber)
+        
+        
+        slider = UISlider(frame: CGRect(x: 80, y: 180, width: 300, height: 23))
         slider.minimumValue = 0.0
         slider.maximumValue = 100.0
         slider.value = 15.0
+        slider.transform = transform
         slider.addTarget(self, action: "sliderValueChanged:", forControlEvents: .ValueChanged)
         self.view.addSubview(slider)
         

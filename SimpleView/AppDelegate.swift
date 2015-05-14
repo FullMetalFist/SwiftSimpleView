@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var viewController: ViewController?
+    var tableViewController: TableViewController!
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // this is necessary-> ViewController(nibName:,bundle:)
         // to avoid calling storyboard
         var viewController = ViewController(nibName: nil, bundle: nil)
+        tableViewController = TableViewController(nibName: nil, bundle: nil)
         var navController = UINavigationController(rootViewController: viewController)
+//        var navController = UINavigationController(rootViewController: tableViewController)
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.lightGrayColor()
         window?.rootViewController = navController
