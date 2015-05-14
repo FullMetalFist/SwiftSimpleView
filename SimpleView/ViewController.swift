@@ -16,13 +16,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        slider = UISlider(frame: CGRectMake(30, 30, 200, 23))
+        slider = UISlider(frame: CGRect(x: 0, y: 80, width: 200, height: 23))
         slider.minimumValue = 0.0
         slider.maximumValue = 100.0
         slider.value = 15.0
+        slider.addTarget(self, action: "sliderValueChanged:", forControlEvents: .ValueChanged)
         self.view.addSubview(slider)
         
-        numberLabel = UILabel(frame: CGRectMake(30, 60, 200, 23))
+        numberLabel = UILabel(frame: CGRectMake(30, 160, 200, 23))
         self.view.addSubview(numberLabel)
     }
 
