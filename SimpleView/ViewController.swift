@@ -17,11 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let spinNumber: CGFloat = CGFloat(M_PI) * 0.5
+        let spinNumber: CGFloat = CGFloat(M_PI) * 1.5
         let transform: CGAffineTransform = CGAffineTransformMakeRotation(spinNumber)
         
         
-        slider = UISlider(frame: CGRect(x: 80, y: 180, width: 300, height: 23))
+        slider = UISlider(frame: CGRect(x: 180, y: 220, width: 300, height: 23))
         slider.minimumValue = 0.0
         slider.maximumValue = 100.0
         slider.value = 15.0
