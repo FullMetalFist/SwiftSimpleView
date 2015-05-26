@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    let kCellIdentifier: String = "Cell Identifier"
+    
     var firstCell: FirstTableViewCell = FirstTableViewCell()
     var secondCell: SecondTableViewCell = SecondTableViewCell()
     var thirdCell: ThirdTableViewCell = ThirdTableViewCell()
@@ -75,6 +77,11 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.registerClass(FirstTableViewCell.classForCoder(), forCellReuseIdentifier: kCellIdentifier)
+        self.tableView.registerClass(SecondTableViewCell.classForCoder(), forCellReuseIdentifier: kCellIdentifier)
+        self.tableView.registerClass(ThirdTableViewCell.classForCoder(), forCellReuseIdentifier: kCellIdentifier)
+        self.tableView.registerClass(FourthTableViewCell.classForCoder(), forCellReuseIdentifier: kCellIdentifier)
+        self.tableView.registerClass(FifthTableViewCell.classForCoder(), forCellReuseIdentifier: kCellIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -88,7 +95,7 @@ class TableViewController: UITableViewController {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         
-        return 2
+        return 3
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,15 +112,39 @@ class TableViewController: UITableViewController {
         }
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(kCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
-
-        return cell
+        switch (indexPath.section)
+        {
+        case 0:
+            switch(indexPath.row)
+            {
+            case 0:
+                return firstCell
+            case 1:
+                return secondCell
+            default:
+                fatalError("Unknown Row")
+            }
+        case 1:
+            switch(indexPath.row)
+            {
+            case 0:
+                return thirdCell
+            case 1:
+                return fourthCell
+            default: fatalError("Unknown Row")
+            }
+        case 2:
+            return fifthCell
+        default:
+            fatalError("Unknown Section")
+        }
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
