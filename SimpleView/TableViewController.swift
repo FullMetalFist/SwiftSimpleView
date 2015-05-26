@@ -18,9 +18,7 @@ class TableViewController: UITableViewController {
     var fourthCell: FourthTableViewCell = FourthTableViewCell()
     var fifthCell: FifthTableViewCell = FifthTableViewCell()
     
-    // first cell contents
-    var firstCellLabelTitle: UILabel = UILabel()
-    var firstCellTextField: UITextField = UITextField()
+    
     
     // second cell contents
     var secondCellLabelTitle: UILabel = UILabel()
@@ -49,11 +47,11 @@ class TableViewController: UITableViewController {
         
         // construct first cell, section 0 cell 0
         self.firstCell.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
-        self.firstCellLabelTitle = UILabel(frame: CGRectInset(self.firstCell.contentView.bounds, 15, 0))
-        self.firstCellTextField = UITextField(frame: CGRectInset(self.firstCell.contentView.bounds, 15, 70))
-        self.firstCellTextField.placeholder = "Bill Amount"
-        self.firstCell.addSubview(self.firstCellLabelTitle)
-        self.firstCell.addSubview(self.firstCellTextField)
+//        self.firstCellLabelTitle = UILabel(frame: CGRectInset(self.firstCell.contentView.bounds, 15, 0))
+//        self.firstCellTextField = UITextField(frame: CGRectInset(self.firstCell.contentView.bounds, 15, 70))
+//        self.firstCellTextField.placeholder = "Bill Amount"
+//        self.firstCell.addSubview(self.firstCellLabelTitle)
+//        self.firstCell.addSubview(self.firstCellTextField)
         
         // construct second cell, section 0 cell 1
         self.secondCell.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 0.6, alpha: 0.5)
