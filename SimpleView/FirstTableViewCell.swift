@@ -15,6 +15,7 @@ class FirstTableViewCell: UITableViewCell {
     let FirstCellLabelTitle_H: String = "H:[firstCellLabelTitle]"
     let FirstCellTextField_V: String = "V:[firstCellTextField]"
     let FirstCellTextField_H: String = "H:[firstCellTextField]"
+    let FirstCellHoriz: String = "H:|[firstCellLabelTitle][firstCellTextField]|"
     
     // first cell contents
     var firstCellLabelTitle: UILabel = UILabel()
@@ -32,6 +33,8 @@ class FirstTableViewCell: UITableViewCell {
         self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellLabelTitle_V, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
         self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellTextField_H, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
         self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellTextField_V, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
+        self.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
     }
 
     required init(coder aDecoder: NSCoder) {
