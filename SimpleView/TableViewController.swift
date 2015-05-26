@@ -88,25 +88,21 @@ class TableViewController: UITableViewController {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         
-//        var section: Int = Int()
-//        switch (self.tableView.section)
-//        {
-//        case 0: return 2
-//            break
-//        case 1: return 2
-//            break
-//        case 2: return 1
-//            break
-//        default: fatalError("Unknown number of sections")
-//        }
-        return 0
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         
-        return 3
+        switch (section) {
+            
+        case 0: return 2
+        case 1: return 2
+        case 2: return 1
+        default: fatalError("Unknown number of sections")
+            
+        }
     }
 
     /*
