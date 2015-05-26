@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // this is necessary-> ViewController(nibName:,bundle:)
         // to avoid calling storyboard
-        var viewController = ViewController(nibName: nil, bundle: nil)
+        viewController = ViewController(nibName: nil, bundle: nil)
         tableViewController = TableViewController(nibName: nil, bundle: nil)
-        var navController = UINavigationController(rootViewController: viewController)
+        var navController = UINavigationController(rootViewController: tableViewController)
 //        var navController = UINavigationController(rootViewController: tableViewController)
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.lightGrayColor()

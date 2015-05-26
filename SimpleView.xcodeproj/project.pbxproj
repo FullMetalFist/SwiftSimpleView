@@ -12,6 +12,8 @@
 		7C7E329E1B02C367005527FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E329D1B02C367005527FA /* Images.xcassets */; };
 		7C7E32A11B02C367005527FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E329F1B02C367005527FA /* LaunchScreen.xib */; };
 		7C7E32AD1B02C367005527FA /* SimpleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E32AC1B02C367005527FA /* SimpleViewTests.swift */; };
+		7CE1EE691B14C352009D4F69 /* FourthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EE681B14C351009D4F69 /* FourthTableViewCell.swift */; };
+		7CE1EE6B1B14C360009D4F69 /* FifthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EE6A1B14C360009D4F69 /* FifthTableViewCell.swift */; };
 		7CFA539D1B04F22D001C5EFB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA539C1B04F22D001C5EFB /* TableViewController.swift */; };
 		7CFA54041B05011D001C5EFB /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA54031B05011D001C5EFB /* FirstTableViewCell.swift */; };
 		7CFA54061B050155001C5EFB /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA54051B050155001C5EFB /* SecondTableViewCell.swift */; };
@@ -38,6 +40,8 @@
 		7C7E32A61B02C367005527FA /* SimpleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7E32AB1B02C367005527FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C7E32AC1B02C367005527FA /* SimpleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewTests.swift; sourceTree = "<group>"; };
+		7CE1EE681B14C351009D4F69 /* FourthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthTableViewCell.swift; sourceTree = "<group>"; };
+		7CE1EE6A1B14C360009D4F69 /* FifthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthTableViewCell.swift; sourceTree = "<group>"; };
 		7CFA539C1B04F22D001C5EFB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7CFA54031B05011D001C5EFB /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		7CFA54051B050155001C5EFB /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				7CFA54031B05011D001C5EFB /* FirstTableViewCell.swift */,
 				7CFA54051B050155001C5EFB /* SecondTableViewCell.swift */,
 				7CFA54071B050161001C5EFB /* ThirdTableViewCell.swift */,
+				7CE1EE681B14C351009D4F69 /* FourthTableViewCell.swift */,
+				7CE1EE6A1B14C360009D4F69 /* FifthTableViewCell.swift */,
 				7C7E329D1B02C367005527FA /* Images.xcassets */,
 				7C7E329F1B02C367005527FA /* LaunchScreen.xib */,
 				7C7E32941B02C367005527FA /* Supporting Files */,
@@ -226,6 +232,8 @@
 				7CFA54041B05011D001C5EFB /* FirstTableViewCell.swift in Sources */,
 				7C7E32971B02C367005527FA /* AppDelegate.swift in Sources */,
 				7CFA54081B050161001C5EFB /* ThirdTableViewCell.swift in Sources */,
+				7CE1EE691B14C352009D4F69 /* FourthTableViewCell.swift in Sources */,
+				7CE1EE6B1B14C360009D4F69 /* FifthTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

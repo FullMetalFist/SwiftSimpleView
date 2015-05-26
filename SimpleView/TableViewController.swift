@@ -10,9 +10,62 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var firstCell: FirstTableViewCell!
-    var secondCell: SecondTableViewCell!
-    var thirdCell: ThirdTableViewCell!
+    var firstCell: FirstTableViewCell = FirstTableViewCell()
+    var secondCell: SecondTableViewCell = SecondTableViewCell()
+    var thirdCell: ThirdTableViewCell = ThirdTableViewCell()
+    var fourthCell: FourthTableViewCell = FourthTableViewCell()
+    var fifthCell: FifthTableViewCell = FifthTableViewCell()
+    
+    // first cell contents
+    var firstCellLabelTitle: UILabel = UILabel()
+    var firstCellTextField: UITextField = UITextField()
+    
+    // second cell contents
+    var secondCellLabelTitle: UILabel = UILabel()
+    var secondCellLabelTipAmount: UILabel = UILabel()
+    // add faceView, slider
+    
+    // third cell contents
+    var thirdCellLabelTitle: UILabel = UILabel()
+    var thirdCellLabelNumberOfPeople: UILabel = UILabel()
+    // add animation, custom button (up/down)
+    
+    // fourth cell contents
+    var fourthCellLabelTitle: UILabel = UILabel()
+    var fourthCellEachPayAmount: UILabel = UILabel()
+    var venmoButton: UIButton = UIButton()
+    
+    // fifth cell contents
+    var fifthCellLabelTitle: UILabel = UILabel()
+    var fifthCellTotalPayment: UILabel = UILabel()
+    
+    override func loadView() {
+        super.loadView()
+        
+        // set the title
+        self.title = "Title"
+        
+        // construct first cell, section 0 cell 0
+        self.firstCell.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
+        self.firstCellLabelTitle = UILabel(frame: CGRectInset(self.firstCell.contentView.bounds, 15, 0))
+        self.firstCellTextField = UITextField(frame: CGRectInset(self.firstCell.contentView.bounds, 15, 70))
+        self.firstCellTextField.placeholder = "Bill Amount"
+        self.firstCell.addSubview(self.firstCellLabelTitle)
+        self.firstCell.addSubview(self.firstCellTextField)
+        
+        // construct second cell, section 0 cell 1
+        self.secondCell.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 0.6, alpha: 0.5)
+        
+        // construct third cell, section 1 cell 0
+        self.thirdCell.backgroundColor = UIColor(red: 1.0, green: 0.6, blue: 1.0, alpha: 0.5)
+        
+        // construct fourth cell, section 1 cell 1
+        self.fourthCell.backgroundColor = UIColor(red: 0.6, green: 1.0, blue: 1.0, alpha: 0.5)
+        
+        // construct fifth cell, section 2 cell 0
+        self.fifthCell.backgroundColor = UIColor(red: 0.6, green: 1.0, blue: 0.6, alpha: 0.5)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +87,25 @@ class TableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
+        
+//        var section: Int = Int()
+//        switch (self.tableView.section)
+//        {
+//        case 0: return 2
+//            break
+//        case 1: return 2
+//            break
+//        case 2: return 1
+//            break
+//        default: fatalError("Unknown number of sections")
+//        }
         return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
+        
         return 3
     }
 
