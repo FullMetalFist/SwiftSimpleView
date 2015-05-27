@@ -113,7 +113,9 @@ class TableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(kCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
-
+        
+        cell.layoutIfNeeded()
+        
         // Configure the cell...
         switch (indexPath.section)
         {

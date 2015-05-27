@@ -11,9 +11,9 @@ import UIKit
 class FirstTableViewCell: UITableViewCell {
     
     // visual format constants
-    let FirstCellLabelTitle_V: String = "V:[firstCellLabelTitle]"
+    let FirstCellLabelTitle_V: String = "V:|[firstCellLabelTitle]|"
     let FirstCellLabelTitle_H: String = "H:[firstCellLabelTitle]"
-    let FirstCellTextField_V: String = "V:[firstCellTextField]"
+    let FirstCellTextField_V: String = "V:|[firstCellTextField]|"
     let FirstCellTextField_H: String = "H:[firstCellTextField]"
     let FirstCellHoriz: String = "H:|[firstCellLabelTitle][firstCellTextField]|"
     
@@ -29,9 +29,9 @@ class FirstTableViewCell: UITableViewCell {
         self.contentView.addSubview(firstCellTextField)
         
         let viewsDict = ["firstCellLabelTitle":firstCellLabelTitle, "firstCellTextField":firstCellTextField]
-        self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellLabelTitle_H, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
+        self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellHoriz, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
         self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellLabelTitle_V, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
-        self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellTextField_H, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
+//        self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellTextField_H, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
         self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(FirstCellTextField_V, options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDict))
         self.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
