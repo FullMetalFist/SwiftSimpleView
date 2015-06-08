@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // to avoid calling storyboard
         viewController = ViewController(nibName: nil, bundle: nil)
         tableViewController = TableViewController(nibName: nil, bundle: nil)
-        var navController = UINavigationController(rootViewController: tableViewController)
+        var navController = UINavigationController(rootViewController: tableViewController!)
 //        var navController = UINavigationController(rootViewController: tableViewController)
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.lightGrayColor()
